@@ -20,4 +20,7 @@ public class PrivateProperty extends Property {
                 ", propertyType='" + propertyType + '\'' +
                 '}';
     }
+    //The equals and hashcode based on owner and the PropertyID
+    // should deal with if the two objects are equal.
+
 }
