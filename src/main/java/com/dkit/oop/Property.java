@@ -83,4 +83,11 @@ public class Property
         this.area = area;
     }
 
+    public void addFacility(){
+
+    }
+    public void removeFacility(){
+
+    }
+
 }
