@@ -84,9 +84,14 @@ public class Property
     }
 
     public void addFacility(){
-
+ if(this.facilities!=null){
+     addFacility();
+ }
     }
     public void removeFacility(){
+    }
+
+    public void calculateTax(){
 
     }
 
