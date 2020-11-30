@@ -54,6 +54,9 @@ public static void getPropertiesPriceAbove(ArrayList<Property>props){
 
     }
         System.out.println("Q3 - tests");
+    props.add(new PrivateProperty(5, "Sarah Smtih", "A22B344", 277700, 150, "mains", 2, "Apartment"));
+    props.add(new PrivateProperty(6, "Eamon Dunn", "AH4491", 27991, 166, "private access", 3, "Semi detached"));
+    props.add(new PrivateProperty(7, "Tom Brown", "AL92665", 30002, 170, "mains", 4, "Apartment"));
 
 
         System.out.println("Q4 - tests");
