@@ -21,13 +21,17 @@ public class Property
         this.area = area;
         this.facilities = facilities;
     }
-    public  Property(){
-
-    }
     public Property(double sellingPrice){
         this.sellingPrice = 0.0;
     }
 
+    public String getFacilities() {
+        return facilities;
+    }
+
+    public void setFacilities(String facilities) {
+        this.facilities = facilities;
+    }
 
     public int getPropertyID()
     {
@@ -79,24 +83,18 @@ public class Property
         this.area = area;
     }
 
-    public String getFacilities() {
-        return facilities;
+    public void addFacility(String facilities) {
+        if (this.facilities != null) {
+            addFacility("Mains");
+        }
     }
 
-    public void setFacilities(String facilities) {
-        this.facilities = facilities;
+    public void removeFacility(String facilities){
+
     }
 
-    public void addFacility(){
- if(this.facilities!=null){
-     addFacility();
- }
-    }
-    public void removeFacility(){
-    }
-
-    public void calculateTax(){
-
+    public void calculateTax(double area){
+double tax = area * 2.2 + 15;
     }
 
     @Override
