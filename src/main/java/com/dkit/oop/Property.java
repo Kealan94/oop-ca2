@@ -25,6 +25,14 @@ public class Property
         this.sellingPrice = 0.0;
     }
 
+    public String getFacilities() {
+        return facilities;
+    }
+
+    public void setFacilities(String facilities) {
+        this.facilities = facilities;
+    }
+
     public int getPropertyID()
     {
         return propertyID;
