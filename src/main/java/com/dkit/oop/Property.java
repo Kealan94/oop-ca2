@@ -3,7 +3,7 @@ package com.dkit.oop;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Property
+public class Property extends App
 {
     private int propertyID;
     private String owner;

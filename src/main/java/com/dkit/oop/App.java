@@ -25,7 +25,7 @@ public class App
         Property p1 = new Property(1, "Mary Smith", "A91AB12", 255000, 130, "mains water");
         Property p2 = new Property(2, "John Smith", "A92AB11,", 255500, 120, "electricity");
         System.out.println("Property p1 details:");
-        System.out.println(p1.getPropertyID() + " : " + p1.getOwner() + " : " + p1.getPostcode() + " : " + p1.getSellingPrice() + " : " + p1.getArea()) + " : " +  p1.getFacilities());
+        System.out.println(p1.getPropertyID() + " : " + p1.getOwner() + " : " + p1.getPostcode() + " : " + p1.getSellingPrice() + " : " + p1.getArea()) + " " + p1.getFacilities();
 
 
         System.out.println("Q2 - tests");
@@ -33,8 +33,15 @@ public class App
         props.add(new Property(3, "Bill Smith", "A99AB15", 255044, 129, "electricity"));
         props.add(new Property(4, "James Murphy", "A99AB16", 250043, 130, "private access"));
         props.add(new Property(5, "Jane Malloy", "A99AB17", 27004, 144, "mains"));
+        displayProperties(props);
+    }
 
 
+public static void displayProperties( ArrayList<Property>props){
+    for (Property properties:props){
+        System.out.println(Property + "" +properties.getArea() + "" + properties.getFacilities() + " "
+                + properties.getOwner() + "" + properties.getPostcode() + "" + properties.getSellingPrice() + "" + properties.getPropertyID());
+    }
 
         System.out.println("Q3 - tests");
 
