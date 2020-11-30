@@ -12,4 +12,12 @@ public class PrivateProperty extends Property {
         this.numBeds = numBeds;
         this.propertyType = propertyType;
     }
+
+    @Override
+    public String toString() {
+        return "PrivateProperty{" +
+                "numBeds=" + numBeds +
+                ", propertyType='" + propertyType + '\'' +
+                '}';
+    }
 }
