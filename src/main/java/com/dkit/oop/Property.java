@@ -10,14 +10,16 @@ public class Property
     private String postcode;
     private double sellingPrice;
     private double area;
+    private String facilities;
 
-    public Property(int propertyID, String owner, String postcode, double sellingPrice, double area)
+    public Property(int propertyID, String owner, String postcode, double sellingPrice, double area, String facilities)
     {
         this.propertyID = propertyID;
         this.owner = owner;
         this.postcode = postcode;
         this.sellingPrice = sellingPrice;
         this.area = area;
+        this.facilities = facilities;
     }
     public Property(double sellingPrice){
         this.sellingPrice = 0.0;
