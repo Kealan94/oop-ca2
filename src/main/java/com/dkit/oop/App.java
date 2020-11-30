@@ -22,7 +22,7 @@ public class App {
         Property p1 = new Property(1, "Mary Smith", "A91AB12", 255000, 130, "mains water");
         Property p2 = new Property(2, "John Smith", "A92AB11,", 255500, 120, "electricity");
         System.out.println("Property p1 details:");
-        //System.out.println(p1.getPropertyID() + " : " + p1.getOwner() + " : " + p1.getPostcode() + " : " + p1.getSellingPrice() + " : " + p1.getArea()) + " " + p1.getFacilities();
+        System.out.println(p1.getPropertyID() + " : " + p1.getOwner() + " : " + p1.getPostcode() + " : " + p1.getSellingPrice() + " : " + p1.getArea()) + " " +"" + p1.getFacilities();
 
 
         System.out.println("Q2 - tests");
@@ -39,7 +39,8 @@ public class App {
 public static void displayProperties(ArrayList<Property>props) {
     for (Property properties : props) {
         System.out.println(properties + "" + properties.getArea() + "" + properties.getFacilities() + " "
-                + properties.getOwner() + "" + properties.getPostcode() + "" + properties.getSellingPrice() + "" + properties.getPropertyID());
+                + properties.getOwner() + "" + properties.getPostcode() + "" + properties.getSellingPrice() +
+                "" + properties.getPropertyID()) + ""  +
     }
 }
 

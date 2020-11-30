@@ -13,6 +13,10 @@ public class PrivateProperty extends Property {
         this.propertyType = propertyType;
     }
 
+
+    public void calculateTax(){
+        
+    }
     @Override
     public String toString() {
         return "PrivateProperty{" +

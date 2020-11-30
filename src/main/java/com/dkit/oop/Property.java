@@ -3,7 +3,7 @@ package com.dkit.oop;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Property extends App
+public class Property
 {
     private int propertyID;
     private String owner;
@@ -21,17 +21,13 @@ public class Property extends App
         this.area = area;
         this.facilities = facilities;
     }
+    public  Property(){
+
+    }
     public Property(double sellingPrice){
         this.sellingPrice = 0.0;
     }
 
-    public String getFacilities() {
-        return facilities;
-    }
-
-    public void setFacilities(String facilities) {
-        this.facilities = facilities;
-    }
 
     public int getPropertyID()
     {
@@ -81,6 +77,14 @@ public class Property extends App
     public void setArea(double area)
     {
         this.area = area;
+    }
+
+    public String getFacilities() {
+        return facilities;
+    }
+
+    public void setFacilities(String facilities) {
+        this.facilities = facilities;
     }
 
     public void addFacility(){
