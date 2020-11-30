@@ -90,4 +90,33 @@ public class Property
 
     }
 
+    @Override
+    public String toString() {
+        return "Property{" +
+                "propertyID=" + propertyID +
+                ", owner='" + owner + '\'' +
+                ", postcode='" + postcode + '\'' +
+                ", sellingPrice=" + sellingPrice +
+                ", area=" + area +
+                ", facilities='" + facilities + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Property property = (Property) o;
+        return propertyID == property.propertyID &&
+                Double.compare(property.sellingPrice, sellingPrice) == 0 &&
+                Double.compare(property.area, area) == 0 &&
+                Objects.equals(owner, property.owner) &&
+                Objects.equals(postcode, property.postcode) &&
+                Objects.equals(facilities, property.facilities);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(propertyID, owner, postcode, sellingPrice, area, facilities);
+    }
 }
