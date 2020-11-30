@@ -19,6 +19,9 @@ public class Property
         this.sellingPrice = sellingPrice;
         this.area = area;
     }
+    public Property(double sellingPrice){
+        this.sellingPrice = 0.0;
+    }
 
     public int getPropertyID()
     {

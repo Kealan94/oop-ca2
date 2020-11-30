@@ -1,10 +1,10 @@
 package com.dkit.oop;
-
+//Kealan Crilly, SD2B, D00224427
 /**
  * OOP - CA#2 - Nov 2020
- * Your Name:
+ * Kealan Crilly
  * <p>
- * Your GitHub link:
+ * Your GitHub link:https://github.com/Kealan94/oop-ca2.git
  */
 public class App
 {
