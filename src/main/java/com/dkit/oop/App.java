@@ -22,7 +22,9 @@ public class App {
         Property p1 = new Property(1, "Mary Smith", "A91AB12", 255000, 130, "mains water");
         Property p2 = new Property(2, "John Smith", "A92AB11,", 255501, 120, "electricity");
         System.out.println("Property p1 details:");
-       // System.out.println(p1.getPropertyID() + " : " + p1.getOwner() + " : " + p1.getPostcode() + " : " + p1.getSellingPrice() + " : " + p1.getArea()) + ":" + p1.getFacilities();
+        System.out.println("Calculate tax");
+
+        // System.out.println(p1.getPropertyID() + " : " + p1.getOwner() + " : " + p1.getPostcode() + " : " + p1.getSellingPrice() + " : " + p1.getArea()) + ":" + p1.getFacilities();
 
         System.out.println("Q2 - tests");
         ArrayList<Property> props = new ArrayList<>();
@@ -37,39 +39,48 @@ public class App {
         displayProperties(props);
         displayallProperties(props);
         getPropertiesPriceAbove(props);
+        propertyIds(props);
+
     }
 
 
-
-public static void displayProperties(ArrayList<Property>props) {
-    for (Property properties : props) {
-        System.out.println(properties + " " +  properties.getArea() + " " + properties.getFacilities() + " "
-                + properties.getOwner() + " " + properties.getPostcode() + " " + properties.getSellingPrice() +
-                " " + properties.getPropertyID() + "" + properties);
+    public static void displayProperties(ArrayList<Property> props) {
+        for (Property properties : props) {
+            System.out.println(properties + " " + properties.getArea() + " " + properties.getFacilities() + " "
+                    + properties.getOwner() + " " + properties.getPostcode() + " " + properties.getSellingPrice() +
+                    " " + properties.getPropertyID() + "" + properties);
+        }
     }
-}
 
-public static void getPropertiesPriceAbove(ArrayList<Property>props) {
-    int boundary = 29000;
-    for (Property properties : props) {
-        if (properties.getSellingPrice() > boundary) {
-            System.out.println();
+    public static void getPropertiesPriceAbove(ArrayList<Property> props) {
+        int boundary = 29000;
+        for (Property properties : props) {
+            if (properties.getSellingPrice() > boundary) {
+                System.out.println();
+            }
+
+
+        }
+        System.out.println("Q3 - tests");
+
+
+        System.out.println("Q4 - tests");
+    }
+
+    public static void displayallProperties(ArrayList<Property> props) {
+        for (Property property : props) {
+            System.out.println(property + " " + "PrivateProperty" + property.getFacilities());
         }
 
-
     }
-    System.out.println("Q3 - tests");
 
 
-    System.out.println("Q4 - tests");
-}
-
-    public static void displayallProperties(ArrayList<Property>props) {
-        for (Property property :props)
+    public void propertyIds(ArrayList<Property> props) {
+        for (Property property: props)
         {
-            System.out.println(property + " " +  "PrivateProperty" + property.getFacilities());
-    }
+            System.out.println("property" + property.getPropertyID());
+        }
 
     }
+
 }
-
